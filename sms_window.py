@@ -33,6 +33,9 @@ def add_record():
     stream = stream_var.get()
     if not name or not email or not contact or not gender or not DOB or not stream:
         messagebox.showerror('Error!', "Please enter all the details!")
+    elif not contact.isdigit() or len(contact) != 10:
+        messagebox.showerror('Wrong type', 'The contact no should be 10 digits and contain only numbers!')
+
     else:
         try:
             cursor.execute(
@@ -42,8 +45,8 @@ def add_record():
             messagebox.showinfo('Record inserted', "Record of {} is added".format(name))
             reset_record()
             display_records()
-        except:
-            messagebox.showerror('Wrong type', 'The contact no should be 10 digits')
+        except Exception as e:
+            messagebox.showerror('Database error', f"An error occurred: {e}")
 
 
 def remove_record():
@@ -156,19 +159,19 @@ tree.config(yscrollcommand=Y_scroller.set, xscrollcommand=X_scroller.set)
 tree.heading('Student_ID', text='ID', anchor=CENTER)
 tree.heading('Name', text='Name', anchor=CENTER)
 tree.heading('Email Address', text='Email ID', anchor=CENTER)
-tree.heading('Contact No', text='Phone No', anchor=CENTER)
+tree.heading('Contact No', text='Phone No',anchor=CENTER)
 tree.heading('Gender', text='Gender', anchor=CENTER)
 tree.heading('Date of Birth', text='DOB', anchor=CENTER)
-tree.heading('Stream', text='Stream', anchor=W)
+tree.heading('Stream', text='Stream', anchor=CENTER)
 
-tree.column('#0', width=0, stretch=NO)
-tree.column('#1', width=40, stretch=NO)
-tree.column('#2', width=120, stretch=NO)
-tree.column('#3', width=180, stretch=NO)
-tree.column('#4', width=60, stretch=NO)
-tree.column('#5', width=60, stretch=NO)
-tree.column('#6', width=70, stretch=NO)
-tree.column('#7', width=120, stretch=YES)
+tree.column('#0', width=0, anchor=CENTER,stretch=NO)
+tree.column('#1', width=40, anchor=CENTER, stretch=NO)
+tree.column('#2', width=120,anchor=CENTER, stretch=NO)
+tree.column('#3', width=180, anchor=CENTER, stretch=NO)
+tree.column('#4', width=60, anchor=CENTER,stretch=YES)
+tree.column('#5', width=60, anchor=CENTER,stretch=NO)
+tree.column('#6', width=70, anchor=CENTER,stretch=NO)
+tree.column('#7', width=120,anchor=CENTER, stretch=YES)
 tree.place(y=30, relwidth=1, relheight=0.9, relx=0)
 display_records()
 

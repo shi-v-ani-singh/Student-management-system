@@ -1,1 +1,1 @@
-Button(l_frame, text='View Record', command=view_record).place(x=200, y=450)
+Exception
