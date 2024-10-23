@@ -50,6 +50,10 @@ A Python GUI application built using Tkinter that allows users to manage student
 ## Screenshots 📸
 ![sms](https://github.com/user-attachments/assets/a2a06964-67ad-4686-85b9-8c3c3c73bc1d)
 
+## Author
+Created by [Shivani](https://github.com/shi-v-ani-singh)
+
+
 
 ## Functionality 🖥️
 - **Add Record**: Allows the user to input student details (name, email, contact, gender, DOB, and stream) and add them to the database.
