@@ -50,9 +50,6 @@ A Python GUI application built using Tkinter that allows users to manage student
 ## Screenshots 📸
 ![sms](https://github.com/user-attachments/assets/a2a06964-67ad-4686-85b9-8c3c3c73bc1d)
 
-## Author
-Created by [Shivani](https://github.com/shi-v-ani-singh)
-
 
 
 ## Functionality 🖥️
@@ -60,4 +57,9 @@ Created by [Shivani](https://github.com/shi-v-ani-singh)
 - **Delete Record**: Removes the selected student entry from the database and the GUI table.
 - **Clear Record**: Resets all input fields to default values.
 - **Remove DB**: Clears the displayed data from the table view without affecting the database.
+
+## Author
+Created by [Shivani](https://github.com/shi-v-ani-singh)
+
+
 
