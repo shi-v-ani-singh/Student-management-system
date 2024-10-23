@@ -48,7 +48,7 @@ A Python GUI application built using Tkinter that allows users to manage student
    ```
 
 ## Screenshots 📸
-![sms](https://github.com/user-attachments/assets/248151a5-a16e-43f4-8c3c-44f4a7d7d39a)
+![sms](https://github.com/user-attachments/assets/a2a06964-67ad-4686-85b9-8c3c3c73bc1d)
 
 
 ## Functionality 🖥️
