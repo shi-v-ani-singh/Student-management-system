@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2024 at 12:38 PM
+-- Generation Time: Oct 23, 2024 at 08:30 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -42,7 +42,7 @@ CREATE TABLE `student_management` (
 --
 
 INSERT INTO `student_management` (`STUDENT_ID`, `NAME`, `EMAIL`, `PHONE_NO`, `GENDER`, `DOB`, `STREAM`) VALUES
-(86, ' 1', ' ', ' ', ' ', '0000-00-00', ' ');
+(1, 'shivani', 'shivani@gmail.com', '2345432234', 'Female', '0000-00-00', 'computer science');
 
 --
 -- Indexes for dumped tables
@@ -53,6 +53,16 @@ INSERT INTO `student_management` (`STUDENT_ID`, `NAME`, `EMAIL`, `PHONE_NO`, `GE
 --
 ALTER TABLE `student_management`
   ADD PRIMARY KEY (`STUDENT_ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `student_management`
+--
+ALTER TABLE `student_management`
+  MODIFY `STUDENT_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
